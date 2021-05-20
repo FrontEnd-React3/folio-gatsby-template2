@@ -41,7 +41,7 @@ const Hero = () => {
                     offset={-50}
                     duration={1000}
                   >
-                    <Button arrowRight>Explore works </Button>
+                    <Button arrowRight>ExplAore works </Button>
                   </Link>
                 </Box>
               </Box>

@@ -14,7 +14,6 @@ const Hero = () => {
         <Container>
           <Row className="text-center justify-content-center">
             <Col lg="10" xl="7">
-              <Availability />
               <div className="text-center my-5">
                 <Title>A genuine<br/>Code-Lover</Title>
               </div>

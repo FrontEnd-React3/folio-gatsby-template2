@@ -8,10 +8,13 @@ const AvailableCircle = styled(Box)`
   width: 12px;
   height: 12px;
 `;
+// const Box = styled(Box)`
+//   margin-top: 15vw;
+// `;
 
 const Hero = ({ className = "justify-content-center", ...rest }) => {
   return (
-    <>      <Box className={`d-flex align-items-center ${className}`} {...rest}>
+    <>      <Box id="skillsbox" className={`d-flex align-items-center ${className}`} {...rest}>
       <AvailableCircle className="bg-success" mr="13px" />
         <Text variant="tag" className="text-uppercase" color="heading">
           Adobe Creative Suite

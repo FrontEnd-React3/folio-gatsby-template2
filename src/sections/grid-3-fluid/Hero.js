@@ -53,7 +53,7 @@ const Hero = () => {
                   duration={1000}
                 >
                   <Button variant="success" arrowRight>
-                    Explore works
+                    ExplOore works
                   </Button>
                 </Link>
               </Box>
