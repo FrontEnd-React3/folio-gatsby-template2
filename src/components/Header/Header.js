@@ -3,7 +3,9 @@ import styled from "styled-components";
 import { Container } from "react-bootstrap";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import { Link } from "react-scroll";
-
+import cven from './cven.pdf';
+import cvnl from './cvnl.pdf';
+import cvfr from './cvfr.pdf';
 import GlobalContext from "../../context/GlobalContext";
 import Offcanvas from "../Offcanvas";
 import NestedMenu from "../NestedMenu";
@@ -79,6 +81,18 @@ const Menu = styled.ul`
         }
       }
     }
+    .submenu {
+      border-bottom: 1px lightgrey solid;
+    }
+    #download-link {
+      color: gray !important;
+      font-size: 12px;
+      text-align: right;
+      font-weight: 900;
+      padding: 0px 10px;
+      line-height: 3.8;
+    }
+
     #portfolio-link:hover,
     #skills-link:hover,
     #about-link:hover,
@@ -274,15 +288,17 @@ const Header = ({ isDark }) => {
                               <MenuDropdown
                                 className="menu-dropdown dropdown-right"
                                 id="download-link"
-
                                 dark={isDark ? 1 : 0}
                               >
-                                
-
-
-
-                                
-                              
+                                <div className="submenu">
+                                  <a href={cvnl} download > CV in het nederlands</a>
+                                </div>
+                                <div className="submenu">
+                                  <a href={cven} download> CV in English</a>
+                                </div>
+                                <div>
+                                  <a href={cvfr} download > CV en français</a>
+                                </div>
                               </MenuDropdown>
                             </li>
                           ) : (
@@ -335,8 +351,8 @@ const Header = ({ isDark }) => {
                   {/* Open contact modal */}
                   <li className="nav-item">
                     <a
-                      className="nav-link"                      id="contact-link"
-
+                      className="nav-link"
+                      id="contact-link"
                       href="/#"
                       onClick={e => {
                         e.preventDefault();

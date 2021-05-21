@@ -18,7 +18,7 @@ export const designWorks2 = [
   link : "/portfolio-details"
 },
   {
-    brand: `Travel App`,
+    brand: `Trafvel App`,
     slug: `travel-app`,
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`photography`, `branding`],
